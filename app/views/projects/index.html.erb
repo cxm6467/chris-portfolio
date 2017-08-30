@@ -2,8 +2,8 @@
   <h1 class="text-center">Projects</h1>
   <hr />
   <div class="col-10 offset-1 booyah-box">
-        <% if @projects.length > 0 %>
-          <% @projects.each do |project| %>
+      <% @projects.each do |project| %>
+        <% if project.present? %>
             <b>Project Title:  </b><%= project.title %>
             <br />
             <b>Description:  </b><%= project.description %>
