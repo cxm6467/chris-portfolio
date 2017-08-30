@@ -15,12 +15,11 @@
     <br />
       <h1>Projects</h1>
     <hr>
-      <% if @projects.length > 0 %>
-        <%= @projects.each do |project| %>
-          <b><%= project.title %></b>
-          <p><%= project.description %></p>
+    <% if @projects.exists? %>
+      <%= @projects.each do |project| %>
+        <b><%= project.title %></b>
+        <p><%= project.description %></p>
       <% end %>
-    
-      <% end %>
-    </div>
+  </div>
+    <% end %>
 </div>
