@@ -3,15 +3,15 @@
   <hr />
   <div class="col-10 offset-1 booyah-box">
         <% if @projects.exists? %>
-          <%= @projects.each do |project| %>
+          <% @projects.each do |project| %>
             <b>Project Title:  </b><%= project.title %>
             <br />
             <b>Description:  </b><%= project.description %>
           <% end %>
         <br />
         <br />
-        </div>
       <% end %>
+            </div>
       <hr>
       <div class="col-12 offset-1">
         <br />
