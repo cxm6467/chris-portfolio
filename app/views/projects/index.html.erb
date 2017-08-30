@@ -1,29 +1,22 @@
-<div class="booyah-box col-10 offset-1 text-center">
-  <h1>Create a Project</h1>
+<div class="booyah-box col-10 offset-1">
+  <h1 class="text-center">Projects</h1>
   <hr />
-
-  <div class="col-4 offset-1 pull-right">
-  <br />
-    <%= link_to 'Create Project', new_project_path, class: 'btn btn-success' %>
-  </div>
-
-    <br />
-    <br />
-
   <div class="col-10 offset-1 booyah-box">
-    <br />
-    <br />
-      <h1>Projects</h1>
-    <hr>
-    <% if @projects.exists? %>
-      <%= @projects.each do |project| %>
-        <b><%= project.title %></b>
-        <p><%= project.description %></p>
-      <% end %>
-    <br />
-    <br />
-  </div>
-    <% end %>
-    <br />
-    <br />
+        <% if @projects.exists? %>
+          <%= @projects.each do |project| %>
+            <b>Project Title:  </b><%= project.title %>
+            <br />
+            <b>Description:  </b><%= project.description %>
+        <% end %>
+        <br />
+        <br />
+        <hr>
+      <div class="col-6">
+        <br />
+          <%= link_to 'Create Project', new_project_path, class: 'btn btn-success' %>
+      </div>
+    </div>
+  <% end %>
+  <br />
+  <br />
 </div>
