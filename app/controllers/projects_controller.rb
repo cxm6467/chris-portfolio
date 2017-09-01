@@ -9,7 +9,7 @@ class ProjectsController < ApplicationController
   end
 
   def create
-    current_user.project.create(project_params)
+    current_user.projects.create(project_params)
 
     if @project.invalid?
       flash[:error] = '<strong>Could not save</strong> the data you entered is invalid.'
