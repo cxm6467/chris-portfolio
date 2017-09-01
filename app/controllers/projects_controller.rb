@@ -11,7 +11,6 @@ class ProjectsController < ApplicationController
 
   def create
     current_user.projects.create(project_params)
-
     redirect_to projects_path
   end
 
