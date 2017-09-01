@@ -1,5 +1,6 @@
 class ProjectsController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create]
+
   def new
     @project = Project.new
   end
@@ -10,10 +11,6 @@ class ProjectsController < ApplicationController
 
   def create
     current_user.projects.create(project_params)
-
-    if @project.invalid?
-      flash[:error] = '<strong>Could not save</strong> the data you entered is invalid.'
-    end
 
     redirect_to projects_path
   end
