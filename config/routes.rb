@@ -6,4 +6,5 @@ Rails.application.routes.draw do
     get 'resume', to: 'static_pages#resume'
     get 'social_media', to: 'static_pages#social_media'
     resources :projects, only: [:new, :create, :index]
+    resources :users, only: [:show]
 end
