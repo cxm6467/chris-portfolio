@@ -1,5 +1,5 @@
 # Christopher Marasco - Portfolio
-![circleci](https://circleci.com/gh/cxm6467/portfolio/tree/master.svg?style=shield&circle-token=97ba802ff30e567a951c4fee6257c10253c664)
+![circleci](https://circleci.com/gh/cxm6467/portfolio/tree/master.svg?style=shield&circle-token=402a0969d8947226ce26c95c92b63c81c9408879)
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
