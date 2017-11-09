@@ -6,5 +6,12 @@
   <h2>Resume</h2>
   <br />
   <h2>Projects</h2>
+  <div class="booyah-box">
+    <% @projects.each do |project| %>
+      <b>Project Title:  </b><%= project.title %>
+      <br />
+      <b>Description:  </b><%= project.description %>
+    </div>
+    <% end %>
   <br />
 </div>
