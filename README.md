@@ -1,5 +1,5 @@
 # Christopher Marasco - Portfolio
-![circleci](https://circleci.com/gh/circleci/mongofinil/tree/master.svg?style=shield&circle-token=402a0969d8947226ce26c95c92b63c81c9408879)
+![circleci](https://circleci.com/gh/:owner/:repo.svg?style=shield&circle-token=402a0969d8947226ce26c95c92b63c81c9408879)
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
